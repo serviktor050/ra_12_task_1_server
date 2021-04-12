@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "Реакт. Лекция 12. Сервер для задачи 1.",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "prestart": "npm install",
+    "start": "forever server.js",
+    "watch": "forever -w server.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/serviktor050/ra_12_task_1_server.git"
